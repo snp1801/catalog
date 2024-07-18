@@ -1,0 +1,71 @@
+@mixin button-style($bg-color, $text-color: white) {
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+@mixin text-style($font-size, $color, $weight: null) {
+    font-size: $font-size;
+    color: $color;
+    font-weight: $weight;
+}
+
+@mixin icon-button-style($radius, $bg-color, $text-color: white) {
+    border-radius: $radius;
+    overflow: hidden;
+    color: $text-color;
+    background-color: $bg-color;
+}
+
+@mixin link-style($color, $font-size, $padding) {
+    display: inline;
+    color: $color;
+    text-align: center;
+    padding: $padding;
+    text-decoration: none;
+    font-size: $font-size;
+}
+
+@mixin hover-effect($background-color, $text-color) {
+    &:hover {
+        background-color: $background-color;
+        color: $text-color;
+    }
+}
+
+@mixin form-control-style($border, $border-radius) {
+    border-bottom: $border;
+    border-radius: $border-radius;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin focus-effect {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+@mixin text-style($size, $color: $dark-color, $weight: null, $transform: null) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+    text-transform: $transform;
+}
+
+@mixin button-style($border-color, $radius: 0px) {
+    width: 100%;
+    font-size: $small-font-size;
+    border-bottom: 1px solid $border-color;
+    border-radius: $radius;
+    text-align: left;
+}
+
+@mixin grid-container($width, $max-width, $grid-columns) {
+    width: $width;
+    margin: 0 auto;
+    max-width: $max-width;
+    display: grid;
+    grid-template-columns: $grid-columns;
+}

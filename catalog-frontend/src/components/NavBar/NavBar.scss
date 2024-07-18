@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+// Styles using Mixins
+nav {
+    a {
+        @include link-style($dark-color, $font-size-normal, 14px 16px);
+        @include hover-effect($light-color, $dark-color);
+    }
+
+    .nav-text {
+        font-size: $x-small-font-size;
+        font-weight: bold;
+    }
+
+    .menu-icon {
+        font-size: $font-size-large;
+        background-color: $dark-color;
+        color: $light-color;
+    }
+
+    .form-inline {
+        .form-control {
+            border: none;
+            @include form-control-style(2px solid $btn-border-color, 0px);
+        }
+    }
+
+    .btn {
+        @include focus-effect;
+    }
+}

@@ -1,0 +1,108 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+.product-list {
+    .filter-by {
+        width: 90%;
+
+        .filter-text {
+            @include text-style($small-font-size, $dark-color, null, null);
+            opacity: 0.5;
+        }
+
+        .filter-name {
+            @include text-style($small-font-size, $dark-color);
+            border-bottom: 1px solid $dark-color;
+            border-radius: 0px;
+        }
+
+        button {
+            padding-left: 0%;
+            @include button-style($transparent-color);
+            border-radius: 0px !important;
+        }
+
+        .price-range {
+            @include text-style($small-font-size);
+        }
+    }
+
+    .products {
+        padding: 1rem 0;
+
+        .product-center {
+            @include grid-container(70vw, $grid-max-width, repeat(auto-fit, $grid-column-min-max));
+
+            .product {
+                max-width: $product-max-width;
+
+                .img-container {
+                    position: relative;
+                    overflow: hidden;
+
+                    .product-img {
+                        display: block;
+                        min-height: 12rem;
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    @include text-style($x-small-font-size, $dark-color, bold, capitalize);
+                    margin-top: -17px;
+                    z-index: 161;
+                    position: relative;
+                    bottom: 15px;
+                    background-color: $light-color;
+                    width: 75%;
+                    height: 34px;
+                    line-height: 65px;
+                }
+
+                h4 {
+                    @include text-style($x-small-font-size, $dark-color);
+                    margin-top: -1.25rem;
+                    margin-bottom: 3rem;
+                    text-align: right;
+                }
+                h2 {
+                    @include text-style($x-small-font-size, $dark-color);
+                    margin-top: -0.5rem;
+                }
+
+                h2 {
+                    margin-top: -0.5rem;
+                }
+            }
+        }
+
+    }
+
+    .slidecontainer {
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 2px;
+            background: $slider-background;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $slider-thumb-color;
+            cursor: pointer;
+        }
+    }
+}

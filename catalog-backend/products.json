@@ -1,0 +1,84 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "title": "Momo",
+            "type": "Lounge",
+            "price": 11000,
+            "productImg": ["./images/url1.jpeg", "./images/url1_1.jpeg"],
+            "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "collection":"Summer",
+            "color":["Brown", "Navy","Black","Grey"]
+        },
+        {
+            "id": 2,
+            "title": "Comboos",
+            "type": "Table and Chair",
+            "price": 1100,
+            "productImg": ["./images/url2.jpeg", "./images/url2_1.jpeg"],
+            "description": " It has survived not only five centuries, but also the leap into electronic typesetting",
+            "collection":"Winter",
+            "color":["Brown","Black"]
+        },
+        {
+            "id": 3,
+            "title": "Keeve Set",
+            "type": "Shelves",
+            "price": 1250,
+            "productImg": ["./images/url3.jpeg", "./images/url3_1.jpeg"],
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            "collection":"Fall",
+            "color":["Brown", "Navy"]
+        },
+        {
+            "id": 4,
+            "title": "Ville``",
+            "type": "Table",
+            "price": 900,
+            "productImg": ["./images/url4.jpeg", "./images/url4_1.jpeg"],
+            "description": "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont",
+            "collection":"Spring",
+            "color":["Navy","Black"]
+        },
+        {
+            "id": 5,
+            "title": "Penemillie",
+            "type": "Chair",
+            "price": 10000,
+            "productImg": ["./images/url5.jpeg", "./images/url3_1.jpeg"],
+            "description": "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont",
+            "collection":"Summer",
+            "color":["Brown","Grey"]
+        },
+        {
+            "id": 6,
+            "title": "Momo",
+            "type": "Lounge",
+            "price": 2310,
+            "productImg": ["./images/url1.jpeg", "./images/url1_1.jpeg"],
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting",
+            "collection":"Winter",
+            "color":["Brown", "Navy","Black"]
+        },
+        {
+            "id": 7,
+            "title": "Comboos",
+            "type": "Shelves",
+            "price": 2300,
+            "productImg": ["./images/url2.jpeg", "./images/url2_1.jpeg"],
+            "description": "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont",
+            "collection":"Spring",
+            "color":["Navy","Black"]
+        },
+        {
+            "id": 8,
+            "title": "Keeve Set",
+            "type": "Lounge",
+            "price": 5000,
+            "productImg": ["./images/url3.jpeg", "./images/url3_1.jpeg"],
+            "description": "remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets cont",
+            "collection":"Fall",
+            "color":["Brown", "Navy","Black","Grey"]
+        }
+    ]
+}

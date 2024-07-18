@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+@import '../../styles/mixin';
+
+// Mixins
+
+// Styles using Mixins
+.product-details {
+    .preview {
+        overflow: hidden;
+        height: 500px; // Corrected syntax by removing quotes
+    }
+
+    .buy-btn {
+        @include button-style($btn-bg-color);
+    }
+    
+    .product-title {
+        @include text-style($small-font-size, $transparent-color, bold);
+    }
+    
+    .color-btn-icon {
+        @include icon-button-style(20px, $transparent-color);
+    }
+}
