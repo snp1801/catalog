@@ -5,13 +5,22 @@
 
 // Styles using Mixins
 .product-details {
+    @media (min-width: 768px) {
+        .preview {
+            flex: 0 0 66%;
+        }
+        .product-details-right {
+            flex: 0 0 34%;
+        }
+    }
+
     .preview {
         overflow: hidden;
         height: 500px; // Corrected syntax by removing quotes
     }
 
     .buy-btn {
-        @include button-style($btn-bg-color);
+        @include button-style1($btn-bg-color);
     }
     
     .product-title {

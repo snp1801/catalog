@@ -8,7 +8,7 @@ function NavBar({ setSearchText }) {
     };
     return (
         <nav className=" navbar navbar-expand-sm row pt-0">
-            <div className="col-lg-6 col-md-6">
+            <div className="columns ">
                 <ul className="navbar-nav">
                     <li className="nav-icon">
                         <FontAwesomeIcon className='menu-icon p-3' icon={faBars} />
@@ -24,7 +24,7 @@ function NavBar({ setSearchText }) {
                     </li>
                 </ul>
             </div>
-            <div className="col-lg-6 col-md-6">
+            <div className="columns">
                 <form className="form-inline d-flex" style={{ float: "right"}}>
                     <button className="btn mr-sm-2"><FontAwesomeIcon icon={faSearch}/>
                     </button>

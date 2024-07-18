@@ -3,6 +3,19 @@
 
 // Styles using Mixins
 nav {
+    @media (min-width: 768px) {
+        .columns {
+            flex: 0 0 50%;
+        }
+    }
+
+    @media (max-width: 426px) {
+        .navbar-nav {
+            text-align: center;
+        }
+    }
+
+
     a {
         @include link-style($dark-color, $font-size-normal, 14px 16px);
         @include hover-effect($light-color, $dark-color);

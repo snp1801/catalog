@@ -78,7 +78,7 @@ function ProductList({ allProducts, setAllProducts, products, sliderValue, setSl
 
     return (
         <div className="product-list row">
-            <section className="col-lg-3 col-md-3 pt-3">
+            <section className="filter-section pt-3">
                 <div className='filter-by'>
                     <p className="filter-text">Filter By</p>
                     <Accordion defaultActiveKey="">
@@ -129,7 +129,7 @@ function ProductList({ allProducts, setAllProducts, products, sliderValue, setSl
                     </div>
                 </div>
             </section>
-            <section className='col-lg-9 col-md-9 products'>
+            <section className='product-section products'>
                 <div className='product-center'>
                     {
                         products && products.length > 0 ?

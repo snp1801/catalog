@@ -2,6 +2,26 @@
 @import '../../styles/mixin';
 
 .product-list {
+    @media (min-width: 425px) {
+        .filter-section {
+            flex: 0 0 auto;
+            width: 25%;
+        }
+
+        .product-section {
+            flex: 0 0 auto;
+            width: 75%;
+        }
+    }
+    @media (max-width: 768px) {
+        .filter-by {
+            margin: auto;
+        }
+        .product {
+            margin: auto;
+        }
+    }
+
     .filter-by {
         width: 90%;
 
@@ -65,6 +85,7 @@
                     margin-bottom: 3rem;
                     text-align: right;
                 }
+
                 h2 {
                     @include text-style($x-small-font-size, $dark-color);
                     margin-top: -0.5rem;

@@ -1,4 +1,4 @@
-@mixin button-style($bg-color, $text-color: white) {
+@mixin button-style1($bg-color, $text-color: white) {
     background-color: $bg-color;
     color: $text-color;
 }

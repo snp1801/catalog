@@ -12,7 +12,7 @@ function ProductDetails() {
 
     return (
         <div className='row container align-items-center product-details'>
-            <div className="preview col-md-8 col-sm-12 px-0" style={{ overflow: 'hidden', height: '500px' }}>
+            <div className="preview px-0" style={{ overflow: 'hidden', height: '500px' }}>
                 <Carousel>
                     <Carousel.Item>
                         <img src={carImg[0]} alt="Product View" style={{ height: '500px', width: '100%' }} />
@@ -22,7 +22,7 @@ function ProductDetails() {
                     </Carousel.Item>
                 </Carousel>
             </div>
-            <div className="product-details-right col-md-4 col-sm-12">
+            <div className="product-details-right ">
                 <span className="product-title">{product.title}</span>
                 <h3 className="product-type">{product.type}</h3>
                 <p className="product-description">{product.description}</p>
